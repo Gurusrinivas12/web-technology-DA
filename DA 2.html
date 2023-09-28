@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Recipe Book</title>
+    <style>
+        header img {
+            display: block;
+            height: 84px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+      
+        h1 {
+            font-family:cursive;
+            float: left;
+            margin-right: 50px;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            padding: 30px 10%;
+        }
+        .head {
+            background-color:rgb(126, 141, 92);
+        }
+        .navigate ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .navigate li {
+            float: left;
+        }
+        .navigate nav{
+            position: absolute;
+            right: 0;
+            top: 50px;
+            float: right;
+        }
+        .navigate li a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: larger;
+        }
+        .navigate li a:hover {
+            background-color: blue;
+        }
+        body {
+            background-color: yellowgreen;
+        }
+        .receipe_img{
+            background-image: url("recipe.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 600px;
+            width: auto;
+            
+        }
+        .intro {
+            border: 3px solid black;
+            width: 500px;
+            font-weight: bold;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  display: inline-block;
+  background-color: burlywood;
+  opacity: 0.7;
+        }
+        .intro h1,h2{
+            color: red;
+        }
+        .head2 h2{
+            float:left;
+            clear: left;
+        }
+        .container {
+            border: 1px solid rgb(126, 141, 92);
+            background-color: beige;
+            margin: auto;
+            width: 80%;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container1 {
+            border: 1px solid rgb(126, 141, 92);
+            background-color: #FFFDD0;
+            margin: auto;
+            width: 80%;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #chocolate-chip-cookies img{
+            width: 125%;
+            height: 200px;
+        }
+        #vegetable-stir-fry img{
+            width: 125%;
+            height: 200px;
+        }
+        .image img{
+            width: auto;
+            height: 200px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        footer p {
+            margin: 0;
+        }
+
+  
+    </style>
+</head>
+<body>
+    <div class="head">
+    <header>
+        <img class="logo"
+            src= "recipe book.jpg" alt="Loading image">
+        <h1>My Recipe Book</h1>
+        <div class="navigate">
+    <nav>
+        <ul>
+            <li><a href="#pasta-carbonara"><em>Pasta Carbonara</em></a></li>
+            <li><a href="#chocolate-chip-cookies"><em>Chocolate Chip Cookies</em></a></li>
+            <li><a href="#vegetable-stir-fry"><em>Vegetable Stir-Fry</em></a></li>
+            <li><a href="#chicken-biryani"><em>Chicken Biriyani</em></a></li>
+        </ul>
+    </nav>
+        </div>
+    </header>
+    </div>
+    <main>
+        <div class="receipe"><div class="receipe_img"></div><div class="intro"><h1>Welcome to my receipe book</h1><br><div class="head2">
+        <h2>&rdquo;One cannot think well, love well, sleep well, if one has not dined well.&rdquo;</h2></div></div></div><br><br><br>
+        <section id="pasta-carbonara">
+            <div class="container">
+                <div class="content">
+            <h2>Pasta Carbonara</h2>
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>200g spaghetti</li>
+                <li>100g pancetta or guanciale</li>
+                <li>2 large eggs</li>
+                <li>50g Pecorino Romano cheese, grated</li>
+                <li>50g Parmesan cheese, grated</li>
+                <li>Freshly ground black pepper</li>
+            </ul>
+            <h3>Instructions:</h3>
+            <ul>
+                <li>Boil water in a large pot and cook spaghetti until al dente. Drain and set aside.</li>
+                <li>In a skillet, cook pancetta or guanciale until crispy. Remove from heat and set aside.</li>
+                <li>In a bowl, whisk together eggs and grated cheeses until well combined.</li>
+                <li>Combine cooked pasta, crispy pancetta, and the egg-cheese mixture. Toss until creamy and well-coated.</li>
+                <li>Season with freshly ground black pepper and serve immediately.</li>
+            </ul>
+                </div>
+                <div class="image1"><img src="pasta cabarona.jpeg" alt="pasta cabarona image"></div>
+            </div>
+        </section><br><br><br>
+        <section id="chocolate-chip-cookies">
+            <div class="container1">
+                <div class="content">
+            <h2>Chocolate Chip Cookies</h2>
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>2 1/4 cups all-purpose flour</li>
+                <li>1/2 teaspoon baking soda</li>
+                <li>1 cup unsalted butter, room temperature</li>
+                <li>1/2 cup granulated sugar</li>
+                <li>1 cup brown sugar, packed</li>
+                <li>1 teaspoon salt</li>
+                <li>2 teaspoons pure vanilla extract</li>
+                <li>2 large eggs</li>
+                <li>2 cups semi-sweet chocolate chips</li>
+            </ul>
+            <h3>Instructions:</h3>
+            <ul>
+                <li>Preheat your oven to 350°F (175°C). Line a baking sheet with parchment paper.</li>
+                <li>In a medium bowl, whisk together the flour and baking soda. Set aside.</li>
+                <li>In a large mixing bowl, cream together the butter, granulated sugar, brown sugar, and salt until creamy and smooth.</li>
+                <li>Beat in the eggs one at a time, then stir in the vanilla.</li>
+                <li>Gradually add the dry ingredients to the wet ingredients and mix until just combined.</li>
+                <li>Stir in the chocolate chips.</li>
+                <li>Drop rounded tablespoons of cookie dough onto the prepared baking sheet.</li>
+                <li>Bake in preheated oven for 10 to 12 minutes or until the edges are golden but the centers are still soft.</li>
+                <li>Allow cookies to cool on the baking sheet for a few minutes before transferring them to wire racks to cool completely.</li>
+            </ul>
+                </div>
+                <div class="image1"><img src="chocolate_chip.jpeg" alt="chocolate chip cookie image"></div>
+            </div>
+        </section><br><br><br>
+        <section id="vegetable-stir-fry">
+            <div class="container">
+                <div class="content">
+            <h2>Vegetable Stir-Fry</h2>
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>2 tablespoons vegetable oil</li>
+                <li>1 onion, thinly sliced</li>
+                <li>2 cloves garlic, minced</li>
+                <li>1 bell pepper, thinly sliced</li>
+                <li>1 carrot, julienned</li>
+                <li>1 cup broccoli florets</li>
+                <li>1 cup snow peas, trimmed</li>
+                <li>1 cup sliced mushrooms</li>
+                <li>1/4 cup soy sauce</li>
+                <li>1 tablespoon cornstarch</li>
+                <li>1 teaspoon sugar</li>
+                <li>1/2 cup vegetable broth</li>
+            </ul>
+            <h3>Instructions:</h3>
+            <ul>
+                <li>Heat vegetable oil in a large skillet or wok over medium-high heat.</li>
+                <li>Add onion and garlic, and stir-fry for about 1 minute or until fragrant.</li>
+                <li>Add bell pepper, carrot, broccoli, snow peas, and mushrooms. Stir-fry for 3-4 minutes until vegetables are tender-crisp.</li>
+                <li>In a small bowl, whisk together soy sauce, cornstarch, sugar, and vegetable broth.</li>
+                <li>Pour the sauce over the vegetables and stir-fry for an additional 2-3 minutes until the sauce thickens and coats the vegetables.</li>
+                <li>Serve the vegetable stir-fry hot over cooked rice or noodles.</li>
+            </ul>
+                </div>
+                <div class="image1"><img src="vegetable stir fry.jpeg" alt="vegetable-stir-fry image"></div>
+            </div>
+        </section><br><br><br>
+        <section id="chicken-biryani">
+            <div class="container1">
+                <div class="content">
+            <h2>Chicken Biryani</h2>
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>2 cups basmati rice</li>
+                <li>500g chicken, cut into pieces</li>
+                <li>2 onions, thinly sliced</li>
+                <li>2 tomatoes, chopped</li>
+                <li>1/2 cup plain yogurt</li>
+                <li>2 teaspoons ginger-garlic paste</li>
+                <li>2 teaspoons biryani masala</li>
+                <li>1/2 teaspoon turmeric powder</li>
+                <li>1/2 teaspoon red chili powder</li>
+                <li>1/4 cup fresh coriander leaves, chopped</li>
+                <li>1/4 cup fresh mint leaves, chopped</li>
+                <li>4 cups water</li>
+                <li>4 tablespoons vegetable oil or ghee</li>
+                <li>Salt to taste</li>
+            </ul>
+            <h3>Instructions:</h3>
+            <ul>
+                <li>Wash the basmati rice thoroughly and soak it in water for 30 minutes. Drain and set aside.</li>
+                <li>In a large skillet or pot, heat vegetable oil or ghee over medium heat.</li>
+                <li>Add sliced onions and sauté until they turn golden brown.</li>
+                <li>Add ginger-garlic paste and sauté for a couple of minutes until the raw smell disappears.</li>
+                <li>Add chicken pieces and cook until they are no longer pink.</li>
+                <li>Add chopped tomatoes, biryani masala, turmeric powder, red chili powder, yogurt, and salt. Cook until the tomatoes are soft and the oil separates from the mixture.</li>
+                <li>Stir in half of the chopped coriander and mint leaves.</li>
+                <li>In a separate large pot, bring 4 cups of water to a boil. Add the soaked and drained rice. Cook the rice until it is 70% cooked (it should still have a slight bite to it). Drain the rice.</li>
+                <li>Layer the partially cooked rice over the chicken mixture in the skillet or pot. Sprinkle the remaining chopped coriander and mint leaves on top.</li>
+                <li>Cover the pot with a tight-fitting lid or aluminum foil and simmer on low heat for 20-25 minutes, or until the rice is fully cooked and fluffy.</li>
+                <li>Once done, fluff the biryani gently with a fork and serve hot.</li>
+            </ul>
+                </div>
+                <div class="image"><img src="chicken biriyani1.jpg" alt="chicken-biryani image"></div>
+            </div>
+        </section>
+        <footer>
+            <p>&copy; Gurusrinivas&rsquo;s 2023 Recipe Book</p>
+        </footer>
+        
+        
+        
+    </main>
+</body>
+</html>
